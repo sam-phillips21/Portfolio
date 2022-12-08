@@ -1,5 +1,6 @@
 import './App.css';
-import Nav from './components/Nav';
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';
 import Main from './components/Main';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -11,7 +12,13 @@ const App = () => {
   return (
     <>
     <Fragment>
-      {/* <SideNav className='d-flex' /> */}
+      <nav>
+        <Link to='/'/>
+        <Link to='/aboutme'/>
+        <Link to='/projects'/>
+        <Link to='/contact'/>
+      </nav>
+      <Header/>
 			<Routes>
 				<Route
           path='/' 
@@ -25,11 +32,15 @@ const App = () => {
 					path='/contact'
 					element={<Contact />}
 				/>
+        	<Route
+					path='/aboutme'
+					element={<AboutMe />}
+				/>
         </Routes>
 
     </Fragment>
     </>
-  );
+  )
 }
 
 export default App

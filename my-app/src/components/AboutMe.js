@@ -1,7 +1,7 @@
 // contactlinks and screen shots, linkedin
 import React from 'react'
 
-const Contact = () => {
+const AboutMe = () => {
     return(
         <div>
 
@@ -13,4 +13,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default AboutMe

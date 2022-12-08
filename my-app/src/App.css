@@ -15,16 +15,29 @@
 .main {
 
 }
-.projImages {
+
+.mePhoto {
   background-color: #282c34;
   min-height: 100px;
-  max-width: fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: row;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(133, 128, 128);
+  
+}
+.projImages {
+  background-color: #282c34;
+  min-height: 100px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: row;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(126, 124, 124);
 }
 
 .App-link {
