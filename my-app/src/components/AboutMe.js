@@ -6,7 +6,7 @@ const AboutMe = () => {
         <div>
 
             <p>
-            <a href='https://linkedin.com/in/samphillips100/' className='btn btn-outline-info mx-1'>Linkedin</a>
+     
 
             </p>
         </div>

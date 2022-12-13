@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.welcomeBio {
+  font-size: 40px;
+  font-family: "Lucida Console";
+  text-align: center;
+  justify-content: left;
+  border-style: 10px, solid black;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .background {
+  background-color: #868c98;
+
+}  */
+.welcomeBio {
+  font-size: 40px;
+  font-family: "Lucida Console";
+  text-align: center;
+  justify-content: center;
+} 
+
+.projectLinks {
+  font-size: 20px;
+  font-family: "Lucida Console";
+  align-items: row;
+  justify-content: center;
+  padding-right: 40px;
+  margin: 40px;
 }
+.mePhoto {
+background-color: #282c34;
+  /* min-height: 50px; */
+display: flex;
+width: fit-content;
+text-align: center;
+/* align-items: row, center; */
+flex-direction: row;
+font-size: calc(10px + 2vmin);
+color: rgb(133, 128, 128);
+  
+}
+.projImages {
+  background-color: #282c34;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: row; */
+  justify-content: center;
+  align-items: flex;
+  font-size: calc(10px + 2vmin);
+  color: rgb(126, 124, 124);
+}
+
+.m-2 {
+  background-color: #868c98;
+  height: 50px;
+}
+/* .websites:hover {
+  color: grey;
+} */
+
+#header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: rgb(138, 130, 130);
+  align-items: row;
+}
+
+#toggle {
+  background-color: #868c98;
+}
+.projectLinks {
+  text-align: center;
+}
+
+.page-heading {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+
+} 

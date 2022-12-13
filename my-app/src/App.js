@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header';
+import Header from './components/shared/Header';
 import AboutMe from './components/AboutMe';
 import Main from './components/Main';
 import Projects from './components/Projects';
@@ -10,15 +10,13 @@ import { Route, Routes, Link } from 'react-router-dom'
 
 const App = () => {
   return (
-    <>
+    
     <Fragment>
-      <nav>
-        <Link to='/'/>
+      <Header/>
+        {/* <Link to='/'/>
         <Link to='/aboutme'/>
         <Link to='/projects'/>
-        <Link to='/contact'/>
-      </nav>
-      <Header/>
+        <Link to='/contact'/> */}
 			<Routes>
 				<Route
           path='/' 
@@ -39,7 +37,7 @@ const App = () => {
         </Routes>
 
     </Fragment>
-    </>
+    
   )
 }
 
