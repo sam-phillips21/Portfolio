@@ -1,42 +1,114 @@
 import React from 'react'
-import { Container, Image, Card } from "react-bootstrap"
+// import { Container, Image, Card } from "react-bootstrap"
+import '../App.css'
+import Images from './shared/Images'
+import { Carousel }  from 'react-bootstrap';
 
-const Main = () => {
+function CarouselFadeExample() {
+    return(   
+        <>
+        <h1 className="page-heading">Welcome!</h1> 
 
-    return(
-    <>
-    <h1 className="page-heading">Welcome!</h1>
+           <br />
+      
+              <div className='welcomeBio'>
+                  Hi!, I'm Sam and I am software engineer! I am new to the world of software and ready to learn everything I can about the industry. I have a lot of experience in project management and building and I decided I wanted to learn to build in the digital world.
+              </div> 
+          
+         
+      
+          <br /> 
+      
+
     
-    <Container className='mePhoto' style={{textAlign:'center'}} >
-        <Image src="https://i.imgur.com/NNVj5I3.jpg" width="30em" alt="gva" />
-        <Image src="https://i.imgur.com/H1eWv6Z.jpg" width="30em" alt="ga"  />
-        <Image src="https://i.imgur.com/CMkVM1o.jpg" width="30em" alt="va"  />   
-    </Container>
+    <Carousel fade>
+    <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Images.pawSitters}
+          alt="Third slide"
+        />
 
-        <p className='welcomeBio'>
-            Hi! Welcome, I'm Sam and I am a software engineer! I am new to the world of software and ready to learn everything I can about the industry. I have a lot of experience in project management and building and I decided I wanted to learn to build in the digital world.
-        </p>
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Images.goodAvo}
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Images.wyoTrails}
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Images.sp2}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Images.sp}
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Images.sp3}
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  
     
-    <div className= "projectLinks">
-            <a href= "https://wyotrails.fly.dev/">My First Application</a> 
-            <br />
-            <a href= "https://thegoodavocado.netlify.app/">First Group Project</a> 
-    </div>
-
-    <br />
-
-    <div className="projImages">
-
-            <Image src= "https://i.imgur.com/XhDxiYe.png" alt="ps" />
-                
-            <Image src="https://i.imgur.com/i2Scm9P.jpg" alt="ga"/>
-
-            <Image src="https://i.imgur.com/FwlaMgZ.png" alt="wyo"/>
-
-    </div>
-     </>
+  
+    </>
        
-    )
+    );
+    
 }
-
-export default Main
+console.log(CarouselFadeExample)
+export default CarouselFadeExample

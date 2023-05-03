@@ -1,4 +1,4 @@
-// contactlinks and screen shots, linkedin
+// projects links and screen shots
 import React from 'react'
 
 const AboutMe = () => {
@@ -6,8 +6,8 @@ const AboutMe = () => {
         <div>
 
             <p>
-     
 
+HELLLLLLOOOOO ABOUT ME
             </p>
         </div>
     )

@@ -4,11 +4,12 @@ import React from 'react'
 const Projects = () => {
     return(
         <div>
-
-            <p>
-
-
-            </p>
+  <div className= "projectLinks">
+                  <a href= "https://wyotrails.fly.dev/">Trails Application</a> 
+                  <br />
+                  <a href= "https://thegoodavocado.netlify.app/"> Restaurant Review Application </a> 
+          </div>
+  
         </div>
     )
 }

@@ -12,11 +12,13 @@ const App = () => {
   return (
     
     <Fragment>
+      
       <Header/>
-        {/* <Link to='/'/>
+        <Link to='/'/>
         <Link to='/aboutme'/>
         <Link to='/projects'/>
-        <Link to='/contact'/> */}
+        <Link to='/contact'/>
+        
 			<Routes>
 				<Route
           path='/' 
